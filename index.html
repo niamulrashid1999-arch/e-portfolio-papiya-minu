@@ -1,0 +1,1537 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Academic & Clinical E-Portfolio of Papiya Yeasmin Minu - Senior Nursing Instructor, Researcher, and Clinical Healthcare Leader at College of Nursing, Mohakhali, Dhaka.">
+  <meta name="author" content="Papiya Yeasmin Minu">
+  <meta name="keywords" content="Papiya Yeasmin Minu, Nursing Portfolio, Nursing Instructor, Mahidol University, Adult Nursing, Midwifery, Clinical Nursing, Evidence-Based Nursing, Bangladesh Nursing">
+  <title>Papiya Yeasmin Minu | Academic & Clinical E-Portfolio</title>
+  
+  <!-- Google Fonts: Inter & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       Interactive Background Elements (Canvas + Atmospheric Ambient Glows)
+       ========================================================================== -->
+  <canvas id="bg-canvas" class="bg-canvas"></canvas>
+  <div class="ambient-glow glow-1"></div>
+  <div class="ambient-glow glow-2"></div>
+
+  <!-- Scroll Progress Indicator -->
+  <div class="scroll-progress-container">
+    <div class="scroll-progress-bar" id="scroll-progress"></div>
+  </div>
+
+  <!-- Custom Smooth Interactive Cursor -->
+  <div class="custom-cursor" id="custom-cursor"></div>
+  <div class="custom-cursor-dot" id="custom-cursor-dot"></div>
+
+  <!-- ==========================================================================
+       Navigation Bar
+       ========================================================================== -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#hero" class="nav-brand" aria-label="Home">
+        <div class="brand-monogram">PYM</div>
+        <div>
+          <span class="brand-text">Papiya Yeasmin Minu</span>
+          <span class="brand-title">Senior Nursing Instructor</span>
+        </div>
+      </a>
+
+      <nav class="nav-menu" id="nav-menu">
+        <a href="#hero" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#resume" class="nav-link">Resume</a>
+        <a href="#video" class="nav-link">Video</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button type="button" class="theme-toggle-btn" id="theme-toggle" title="Toggle Dark/Light Mode" aria-label="Toggle Theme">
+          ☾
+        </button>
+        <button type="button" class="nav-cta-btn" onclick="window.print()" title="Print or save as PDF">
+          Print / PDF
+        </button>
+        <button type="button" class="mobile-menu-btn" id="mobile-toggle" aria-label="Open Navigation Menu">
+          ☰
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==========================================================================
+         Hero Section (Tomasz Gajda Asymmetric Minimalist Style Enhanced)
+         ========================================================================== -->
+    <section class="hero" id="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <!-- Active Status Pill -->
+          <div class="hero-status-pill">
+            <span class="status-dot-pulse"></span>
+            <span>Active Faculty & Research Guide • College of Nursing, Mohakhali</span>
+          </div>
+
+          <div class="hero-intro-tag">
+            Academic & Clinical E-Portfolio
+          </div>
+          
+          <h1 class="hero-name">
+            Papiya<br>Yeasmin Minu
+          </h1>
+
+          <div class="hero-designation">
+            Instructor • College of Nursing, Mohakhali, Dhaka<br>
+            <span style="font-size: 0.95rem; font-weight: 500; color: var(--text-muted); text-transform: none;">
+              Midwifery & Nursing Education, Clinical Leadership & Research
+            </span>
+          </div>
+
+          <!-- Dynamic Typing Headline Effect -->
+          <div class="hero-dynamic-typing">
+            <span style="color: var(--text-muted); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.1em;">Specialization:</span>
+            <span id="typing-text">Adult Critical Care & Trauma Nursing</span>
+            <span class="typing-cursor">|</span>
+          </div>
+
+          <p class="hero-bio">
+            Senior healthcare educator and clinical specialist with over <strong>32 years</strong> of exemplary public service, international emergency deployment (WHO Pakistan, Saudi Arabia, Hajj Medical Mission), and specialized training in adult critical care, trauma rehabilitation, and nursing pedagogy. M.Sc. in Adult Nursing from Mahidol University, Thailand.
+          </p>
+
+          <!-- Key Metrics Strip with Live Animated Counters -->
+          <div class="hero-highlights-grid">
+            <div class="highlight-stat-item">
+              <span class="stat-number counter" data-target="32" data-suffix="+">0</span>
+              <span class="stat-label">Years of Experience</span>
+            </div>
+            <div class="highlight-stat-item">
+              <span class="stat-number" style="font-family: inherit; font-size: 1.7rem;">M.Sc.</span>
+              <span class="stat-label">Mahidol University</span>
+            </div>
+            <div class="highlight-stat-item">
+              <span class="stat-number counter" data-target="17" data-suffix="+">0</span>
+              <span class="stat-label">Special Trainings</span>
+            </div>
+          </div>
+
+          <div class="hero-buttons">
+            <a href="#resume" class="btn-primary">View Full Resume</a>
+            <a href="#projects" class="btn-secondary">Explore Sample Projects</a>
+            <a href="#contact" class="btn-secondary">Get In Touch</a>
+          </div>
+        </div>
+
+        <!-- Right Side: Tomasz Gajda Geometric Profile Image Frame with 3D Tilt -->
+        <div class="hero-image-column">
+          <div class="hero-image-wrapper">
+            <div class="hero-image-backdrop"></div>
+            <div class="hero-image-card">
+              <img src="assets/profile.jpg" alt="Papiya Yeasmin Minu - Senior Nursing Instructor" class="hero-photo">
+            </div>
+            <div class="hero-image-badge">
+              <div class="badge-role">Instructor, College of Nursing</div>
+              <div class="badge-dept">2nd Class Gazetted Officer (Since 2011)</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         About Me Section
+         ========================================================================== -->
+    <section class="section section-alt" id="about">
+      <div class="container">
+        <div class="section-badge-wrapper reveal-on-scroll">
+          <span class="section-badge">About Me</span>
+          <div class="section-subtitle">Academic Background • Clinical Trajectory • Philosophy</div>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="about-narrative reveal-on-scroll reveal-delay-1">
+          <p>
+            My healthcare journey spans more than three decades, beginning in 1991 in maternal and child health and evolving through critical care, trauma rehabilitation, international emergency missions, and higher academic leadership. Throughout this journey, my guiding principle has remained steadfast: integrating rigorous clinical evidence with empathetic, patient-centered care and inspiring the next generation of nurse leaders.
+          </p>
+          <p>
+            After graduating with high distinction in Nursing and Midwifery from Barisal, I pursued advanced public health studies at Dhaka University (B.Sc., 2005) and earned my Master of Science in Adult Nursing at <strong>Mahidol University, Bangkok, Thailand (2014)</strong>. As an Instructor at the prestigious <strong>College of Nursing, Mohakhali, Dhaka</strong>, I actively mentor postgraduate nursing researchers, shape national nursing curricula through Technical Working Groups (TWG) with the Directorate General of Nursing and Midwifery (DGNM), and champion evidence-based clinical protocols nationwide.
+          </p>
+        </div>
+
+        <!-- 3 Core Pillars with 3D Card Hover -->
+        <div class="pillars-grid">
+          <div class="pillar-card reveal-on-scroll reveal-delay-1">
+            <div class="pillar-index">01 / PRACTICE</div>
+            <h3 class="pillar-title">Clinical Excellence & Critical Care</h3>
+            <p class="pillar-desc">
+              Over a decade managing acute trauma and orthopedic emergencies at NITOR, cardiac catheterization lab procedures at Chiang Mai University, and frontline emergency response during international deployments.
+            </p>
+            <ul class="pillar-list">
+              <li>Trauma & Orthopedic Critical Care (NITOR)</li>
+              <li>Cardiac Catheterization Lab Specialist</li>
+              <li>Emergency Triage & Disaster Response</li>
+            </ul>
+          </div>
+
+          <div class="pillar-card reveal-on-scroll reveal-delay-2">
+            <div class="pillar-index">02 / EDUCATION</div>
+            <h3 class="pillar-title">Academic Leadership & Pedagogy</h3>
+            <p class="pillar-desc">
+              Full-time faculty member at the College of Nursing Mohakhali. Technical Working Group architect for national nurse teacher training curricula and modern clinical evaluation grids with DGNM and ProNurse.
+            </p>
+            <ul class="pillar-list">
+              <li>Graduate & Diploma Nursing Instruction</li>
+              <li>Curriculum & Assessment Grid Architecture</li>
+              <li>Master Trainer for Newly Appointed Nurses</li>
+            </ul>
+          </div>
+
+          <div class="pillar-card reveal-on-scroll reveal-delay-3">
+            <div class="pillar-index">03 / RESEARCH</div>
+            <h3 class="pillar-title">Evidence-Based Research & Mentorship</h3>
+            <p class="pillar-desc">
+              Published scholar in peer-reviewed indexed journals on pressure ulcer prevention and patient satisfaction. Active research advisor guiding postgraduate nurses on epidemiology, infection control, and clinical audits.
+            </p>
+            <ul class="pillar-list">
+              <li>Indexed Publications with DOI Citations</li>
+              <li>Braden Scale & Clinical Audit Modeling</li>
+              <li>Postgraduate Master's Thesis Supervision</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Skills & Competencies Section (Tomasz Gajda Categorized Blocks)
+         ========================================================================== -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-badge-wrapper reveal-on-scroll">
+          <span class="section-badge">Skills & Expertise</span>
+          <div class="section-subtitle">Clinical Competencies • Pedagogical Mastery • Technical Tools</div>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="skills-container">
+          <!-- Group 1: Clinical & Specialized Care -->
+          <div class="skills-group reveal-on-scroll reveal-delay-1">
+            <h3 class="skills-group-title">Clinical & Specialized Healthcare</h3>
+            <div class="skills-flex-wrap">
+              <div class="skill-tag">
+                <span class="skill-icon">✚</span>
+                <span class="skill-name">Adult Critical Care & ICU</span>
+                <span class="skill-level-badge">Advanced</span>
+              </div>
+              <div class="skill-tag">
+                <span class="skill-icon">✚</span>
+                <span class="skill-name">Trauma & Orthopedic Nursing (NITOR)</span>
+                <span class="skill-level-badge">Expert</span>
+              </div>
+              <div class="skill-tag">
+                <span class="skill-icon">✚</span>
+                <span class="skill-name">Cardiac Catheterization Lab Management</span>
+                <span class="skill-level-badge">Specialist</span>
+              </div>
+              <div class="skill-tag">
+                <span class="skill-icon">✚</span>
+                <span class="skill-name">Midwifery, Neonatal Care & Obstructed Labour</span>
+                <span class="skill-level-badge">Licensed</span>
+              </div>
+              <div class="skill-tag">
+                <span class="skill-icon">✚</span>
+                <span class="skill-name">Spinal Cord Injury Nursing & Rehabilitation</span>
+                <span class="skill-level-badge">Certified</span>
+              </div>
+              <div class="skill-tag">
+                <span class="skill-icon">✚</span>
+                <span class="skill-name">Chronic Kidney Disease (CKD) Management</span>
+                <span class="skill-level-badge">Certified</span>
+              </div>
+              <div class="skill-tag">
+                <span class="skill-icon">✚</span>
+                <span class="skill-name">Infection Prevention & Hospital Hygiene</span>
+                <span class="skill-level-badge">Expert</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Group 2: Academic & Educational Leadership -->
+          <div class="skills-group reveal-on-scroll reveal-delay-2">
+            <h3 class="skills-group-title">Academic Leadership & Nursing Pedagogy</h3>
+            <div class="skills-flex-wrap">
+              <div class="skill-tag">
+                <span class="skill-icon">✎</span>
+                <span class="skill-name">Curriculum & Syllabus Design (DGNM TWG)</span>
+                <span class="skill-level-badge">Master</span>
+              </div>
+              <div class="skill-tag">
+                <span class="skill-icon">✎</span>
+                <span class="skill-name">Modern Teaching Methodology (NIPSOM)</span>
+                <span class="skill-level-badge">Certified</span>
+              </div>
+              <div class="skill-tag">
+                <span class="skill-icon">✎</span>
+                <span class="skill-name">Clinical Evaluation Grids & OSCE Assessment</span>
+                <span class="skill-level-badge">Examiner</span>
+              </div>
+              <div class="skill-tag">
+                <span class="skill-icon">✎</span>
+                <span class="skill-name">Training of Trainers (TOT Midwifery - UNFPA/WHO)</span>
+                <span class="skill-level-badge">TOT</span>
+              </div>
+              <div class="skill-tag">
+                <span class="skill-icon">✎</span>
+                <span class="skill-name">Nursing Institute Monitoring & Evaluation (NIME)</span>
+                <span class="skill-level-badge">Monitor</span>
+              </div>
+              <div class="skill-tag">
+                <span class="skill-icon">✎</span>
+                <span class="skill-name">Healthcare Innovation & Faculty Development</span>
+                <span class="skill-level-badge">Facilitator</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Group 3: Research & Evidence-Based Practice -->
+          <div class="skills-group reveal-on-scroll reveal-delay-3">
+            <h3 class="skills-group-title">Research & Evidence-Based Practice</h3>
+            <div class="skills-flex-wrap">
+              <div class="skill-tag">
+                <span class="skill-icon">◈</span>
+                <span class="skill-name">Research Methodology (BMRC Accredited)</span>
+                <span class="skill-level-badge">Principal</span>
+              </div>
+              <div class="skill-tag">
+                <span class="skill-icon">◈</span>
+                <span class="skill-name">Evidence-Based Clinical Protocol Development</span>
+                <span class="skill-level-badge">Author</span>
+              </div>
+              <div class="skill-tag">
+                <span class="skill-icon">◈</span>
+                <span class="skill-name">Pressure Ulcer Prevention & Risk Stratification</span>
+                <span class="skill-level-badge">Specialist</span>
+              </div>
+              <div class="skill-tag">
+                <span class="skill-icon">◈</span>
+                <span class="skill-name">Thesis Supervision & Scientific Mentorship</span>
+                <span class="skill-level-badge">Guide</span>
+              </div>
+              <div class="skill-tag">
+                <span class="skill-icon">◈</span>
+                <span class="skill-name">Scientific Manuscript Writing & Dissemination</span>
+                <span class="skill-level-badge">Published</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Group 4: Digital Tools & Healthcare MIS -->
+          <div class="skills-group reveal-on-scroll reveal-delay-1">
+            <h3 class="skills-group-title">Digital Informatics & Healthcare Administration</h3>
+            <div class="skills-flex-wrap">
+              <div class="skill-tag">
+                <span class="skill-icon">⌨</span>
+                <span class="skill-name">SPSS Statistical Data Analysis</span>
+              </div>
+              <div class="skill-tag">
+                <span class="skill-icon">⌨</span>
+                <span class="skill-name">Health Management Information Systems (DGHS MIS)</span>
+              </div>
+              <div class="skill-tag">
+                <span class="skill-icon">⌨</span>
+                <span class="skill-name">Microsoft Word (Scientific Documentation)</span>
+              </div>
+              <div class="skill-tag">
+                <span class="skill-icon">⌨</span>
+                <span class="skill-name">Microsoft PowerPoint (Lecture & Seminar Design)</span>
+              </div>
+              <div class="skill-tag">
+                <span class="skill-icon">⌨</span>
+                <span class="skill-name">Microsoft Excel (Data Entry & Tabulation)</span>
+              </div>
+              <div class="skill-tag">
+                <span class="skill-icon">⌨</span>
+                <span class="skill-name">Internet Research & Scholarly Databases</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Group 5: Languages -->
+          <div class="skills-group reveal-on-scroll reveal-delay-2">
+            <h3 class="skills-group-title">Languages Known</h3>
+            <div class="skills-flex-wrap">
+              <div class="skill-tag">
+                <span class="skill-icon">🌐</span>
+                <span class="skill-name">Bengali</span>
+                <span class="skill-level-badge">Native (Spoken & Written)</span>
+              </div>
+              <div class="skill-tag">
+                <span class="skill-icon">🌐</span>
+                <span class="skill-name">English</span>
+                <span class="skill-level-badge">Professional (NAPD Certified)</span>
+              </div>
+              <div class="skill-tag">
+                <span class="skill-icon">🌐</span>
+                <span class="skill-name">Arabic</span>
+                <span class="skill-level-badge">Spoken (KSA & Hajj Mission)</span>
+              </div>
+              <div class="skill-tag">
+                <span class="skill-icon">🌐</span>
+                <span class="skill-name">Hindi & Urdu</span>
+                <span class="skill-level-badge">Spoken (WHO Pakistan Mission)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Sample Projects Section (Guideline Requirement #3)
+         Detailed Case Studies: Thought Process, Decision Making, Role & Outcomes
+         ========================================================================== -->
+    <section class="section section-alt" id="projects">
+      <div class="container">
+        <div class="section-badge-wrapper reveal-on-scroll">
+          <span class="section-badge">Sample Projects</span>
+          <div class="section-subtitle">Clinical Case Studies • Thought Process • Measured Impact</div>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="projects-header-info reveal-on-scroll reveal-delay-1">
+          As outlined in academic e-portfolio guidelines, the following selected initiatives demonstrate systematic problem-solving, clinical analysis, multi-stage decision-making, and verifiable healthcare outcomes.
+        </div>
+
+        <!-- Project A (Curriculum & Evidence-Based Research) -->
+        <article class="project-case-card reveal-on-scroll">
+          <div class="project-top-bar">
+            <div style="display: flex; align-items: center; gap: 0.75rem;">
+              <span class="project-id-badge">PROJECT A</span>
+              <span class="project-domain-tag">Evidence-Based Clinical Practice & Research</span>
+            </div>
+            <div style="font-family: var(--font-mono); font-size: 0.8rem; font-weight: 700; color: var(--text-muted);">
+              MAHIDOL UNIVERSITY / ACCADEMIA / SOUTH ASIAN NURSING JOURNAL
+            </div>
+          </div>
+
+          <div class="project-body">
+            <h3 class="project-title">
+              Evidence-Based Pressure Ulcer Prevention Protocol for Hospitalized Adult Patients
+            </h3>
+
+            <div class="project-role-banner">
+              <span>ROLE:</span>
+              <strong>Principal Investigator, Author & Master Instructor</strong>
+              <span>| FOCUS:</span>
+              <span>Preventive Protocols, Braden Risk Assessment & Evidence Synthesis</span>
+            </div>
+
+            <p class="project-overview-text">
+              Hospital-acquired pressure ulcers (HAPUs) present severe clinical complications leading to heightened sepsis, pain, and protracted hospital stays. This comprehensive initiative formulated, tested, and published a multi-tiered evidence-based nursing guideline tailored for acute care hospital wards.
+            </p>
+
+            <!-- 4-Stage Thought Process & Methodology Flow -->
+            <div class="stages-flow-grid">
+              <div class="stage-step-card">
+                <span class="stage-number">Stage 01</span>
+                <h4 class="stage-title">Clinical Problem Identification</h4>
+                <p class="stage-desc">
+                  Identified persistent incidence of pressure ulcers among bedridden and critically ill orthopedic/medical patients due to inconsistent bedside risk monitoring.
+                </p>
+              </div>
+
+              <div class="stage-step-card">
+                <span class="stage-number">Stage 02</span>
+                <h4 class="stage-title">Risk Stratification & Synthesis</h4>
+                <p class="stage-desc">
+                  Standardized the Braden Risk Assessment Scale, analyzing sensory perception, moisture, activity, mobility, nutrition (serum albumin), and friction/shear forces.
+                </p>
+              </div>
+
+              <div class="stage-step-card">
+                <span class="stage-number">Stage 03</span>
+                <h4 class="stage-title">Protocol Formulation</h4>
+                <p class="stage-desc">
+                  Structured an evidence-based clinical algorithm combining strict 2-hour 30-degree lateral tilting, silicone foam dressings, barrier creams, and pressure-relieving surfaces.
+                </p>
+              </div>
+
+              <div class="stage-step-card">
+                <span class="stage-number">Stage 04</span>
+                <h4 class="stage-title">Validation & Dissemination</h4>
+                <p class="stage-desc">
+                  Presented at international congresses, published across indexed journals with DOIs, and translated into national nursing curricula and post-graduate thesis studies.
+                </p>
+              </div>
+            </div>
+
+            <!-- Analysis & Specific Responsibilities -->
+            <div class="project-details-split">
+              <div class="details-col">
+                <h4>Methodological Decision-Making</h4>
+                <p>
+                  Rather than relying on isolated positioning, the protocol incorporated a comprehensive nutritional audit and biochemical monitoring. Bedside nurses were provided structured risk scoring cards, ensuring immediate identification of stage I skin blanching before tissue breakdown occurred.
+                </p>
+              </div>
+              <div class="details-col">
+                <h4>Specific Leadership Responsibilities</h4>
+                <ul>
+                  <li>Synthesized multi-database clinical literature at Mahidol University.</li>
+                  <li>Drafted standardized nursing care flowsheets for inpatient wards.</li>
+                  <li>Guided post-graduate thesis assessing protocol adherence at NITOR.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="project-metrics-strip">
+              <div class="metrics-items">
+                <div class="metric-item">
+                  <span class="metric-value counter" data-target="2" data-suffix=" Indexed Papers">0</span>
+                  <span class="metric-label">Accademia Publications</span>
+                </div>
+                <div class="metric-item">
+                  <span class="metric-value">DOI: 10.20935/Al.2885</span>
+                  <span class="metric-label">Global Academic Citation</span>
+                </div>
+                <div class="metric-item">
+                  <span class="metric-value">National Guideline</span>
+                  <span class="metric-label">South Asian Nursing Journal 2022</span>
+                </div>
+              </div>
+
+              <div class="project-links-wrap">
+                <button type="button" class="btn-small-link open-project-modal-btn" data-project="project1">
+                  View Full Case Study ↗
+                </button>
+                <a href="https://doi.org/10.20935/Al.2885" target="_blank" rel="noopener noreferrer" class="btn-small-link">
+                  DOI Reference ↗
+                </a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project B (International Disaster Management & WHO Response) -->
+        <article class="project-case-card reveal-on-scroll">
+          <div class="project-top-bar">
+            <div style="display: flex; align-items: center; gap: 0.75rem;">
+              <span class="project-id-badge">PROJECT B</span>
+              <span class="project-domain-tag">International Disaster Management & Emergency Public Health</span>
+            </div>
+            <div style="font-family: var(--font-mono); font-size: 0.8rem; font-weight: 700; color: var(--text-muted);">
+              WORLD HEALTH ORGANIZATION (WHO) • HYDERABAD & SINDH, PAKISTAN
+            </div>
+          </div>
+
+          <div class="project-body">
+            <h3 class="project-title">
+              WHO Frontline Flood Emergency Health & Epidemic Containment Deployment
+            </h3>
+
+            <div class="project-role-banner">
+              <span>ROLE:</span>
+              <strong>Senior Staff Nurse & WHO Emergency Health Responder (40-Day Deployment)</strong>
+              <span>| FOCUS:</span>
+              <span>Disaster Triage, Diarrheal Epidemic Control & Maternal-Child Stabilization</span>
+            </div>
+
+            <p class="project-overview-text">
+              Selected by the World Health Organization and the Ministry of Health for frontline deployment during the catastrophic southern Pakistan flood disaster. Led critical emergency nursing interventions in high-density makeshift relief camps in Hyderabad, Sindh.
+            </p>
+
+            <!-- 4-Stage Thought Process -->
+            <div class="stages-flow-grid">
+              <div class="stage-step-card">
+                <span class="stage-number">Stage 01</span>
+                <h4 class="stage-title">Emergency Mobilization</h4>
+                <p class="stage-desc">
+                  Rapid deployment to flood-inundated zones; assessed camp sanitation, contaminated drinking water sources, and immediate disease outbreak risks.
+                </p>
+              </div>
+
+              <div class="stage-step-card">
+                <span class="stage-number">Stage 02</span>
+                <h4 class="stage-title">Triage Station Architecture</h4>
+                <p class="stage-desc">
+                  Established an isolated Diarrheal Treatment Unit (DTU) separate from general camp wards to quarantine acute cholera and dysentery clusters.
+                </p>
+              </div>
+
+              <div class="stage-step-card">
+                <span class="stage-number">Stage 03</span>
+                <h4 class="stage-title">Clinical Resuscitation</h4>
+                <p class="stage-desc">
+                  Administered emergency IV rehydration (Ringer's Lactate) and oral rehydration therapy (ORT Plan A/B/C) to profoundly dehydrated infants and elderly patients.
+                </p>
+              </div>
+
+              <div class="stage-step-card">
+                <span class="stage-number">Stage 04</span>
+                <h4 class="stage-title">Outbreak Containment & Handover</h4>
+                <p class="stage-desc">
+                  Implemented point-of-use water chlorination, conducted community health sessions in Urdu, and safely transferred operational protocols to regional medics.
+                </p>
+              </div>
+            </div>
+
+            <!-- Analysis & Responsibilities -->
+            <div class="project-details-split">
+              <div class="details-col">
+                <h4>Clinical Decision Under Austere Constraints</h4>
+                <p>
+                  With limited intravenous supplies, strict clinical rationing was applied using WHO dehydration scales: preserving intravenous fluids for severe circulatory shock (Plan C) while aggressively administering measured oral rehydration salts with zinc supplementation for moderate dehydration.
+                </p>
+              </div>
+              <div class="details-col">
+                <h4>Specific Field Responsibilities</h4>
+                <ul>
+                  <li>Directly managed over 1,200 acute dehydrating diarrhea and dysentery cases.</li>
+                  <li>Overcame language barriers by communicating directly in fluent Urdu and Hindi.</li>
+                  <li>Delivered specialized emergency nutritional counseling to lactating mothers.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="project-metrics-strip">
+              <div class="metrics-items">
+                <div class="metric-item">
+                  <span class="metric-value counter" data-target="1200" data-suffix="+">0</span>
+                  <span class="metric-label">Emergency Patients Stabilized</span>
+                </div>
+                <div class="metric-item">
+                  <span class="metric-value">0%</span>
+                  <span class="metric-label">Preventable Camp Mortality</span>
+                </div>
+                <div class="metric-item">
+                  <span class="metric-value counter" data-target="40" data-suffix=" Days">0</span>
+                  <span class="metric-label">Frontline WHO Mission</span>
+                </div>
+              </div>
+
+              <div class="project-links-wrap">
+                <button type="button" class="btn-small-link open-project-modal-btn" data-project="project2">
+                  View Full Case Study ↗
+                </button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project C (National Curriculum & Capacity Building) -->
+        <article class="project-case-card reveal-on-scroll">
+          <div class="project-top-bar">
+            <div style="display: flex; align-items: center; gap: 0.75rem;">
+              <span class="project-id-badge">PROJECT C</span>
+              <span class="project-domain-tag">National Academic Curriculum & Institutional Capacity</span>
+            </div>
+            <div style="font-family: var(--font-mono); font-size: 0.8rem; font-weight: 700; color: var(--text-muted);">
+              DIRECTORATE GENERAL OF NURSING & MIDWIFERY (DGNM) • PRONURSE PROJECT
+            </div>
+          </div>
+
+          <div class="project-body">
+            <h3 class="project-title">
+              National Nurse Teachers' Training (TWG) Detailed Syllabus & Clinical Evaluation Grids
+            </h3>
+
+            <div class="project-role-banner">
+              <span>ROLE:</span>
+              <strong>Technical Working Group (TWG) Member, Course Architect & Master Trainer</strong>
+              <span>| FOCUS:</span>
+              <span>Pedagogical Standards, Session Plans & Clinical Competency Rubrics</span>
+            </div>
+
+            <p class="project-overview-text">
+              Collaborated in a high-level national Technical Working Group organized by DGNM and the ProNurse project in 2023 to modernize nurse educator training across Bangladesh, transitioning from passive didactic lectures to interactive, competency-based clinical education.
+            </p>
+
+            <!-- 4-Stage Thought Process -->
+            <div class="stages-flow-grid">
+              <div class="stage-step-card">
+                <span class="stage-number">Stage 01</span>
+                <h4 class="stage-title">Faculty Competency Audit</h4>
+                <p class="stage-desc">
+                  Reviewed instructional methodologies across government nursing colleges, identifying significant gaps in objective student evaluation and modern simulation debriefing.
+                </p>
+              </div>
+
+              <div class="stage-step-card">
+                <span class="stage-number">Stage 02</span>
+                <h4 class="stage-title">Modular Syllabus Architecture</h4>
+                <p class="stage-desc">
+                  Formulated standardized session plans, learning objectives, microteaching modules, and pedagogical frameworks tailored for nurse teachers.
+                </p>
+              </div>
+
+              <div class="stage-step-card">
+                <span class="stage-number">Stage 03</span>
+                <h4 class="stage-title">Evaluation Grid Formulation</h4>
+                <p class="stage-desc">
+                  Developed transparent, criterion-referenced rubrics for clinical procedure evaluation, reducing subjective examiner grading variability.
+                </p>
+              </div>
+
+              <div class="stage-step-card">
+                <span class="stage-number">Stage 04</span>
+                <h4 class="stage-title">National Rollout & CTP Adoption</h4>
+                <p class="stage-desc">
+                  Accredited by DGNM as the core curriculum for the Certificate Training Program (CTP), empowering faculty across national nursing institutions.
+                </p>
+              </div>
+            </div>
+
+            <!-- Analysis & Responsibilities -->
+            <div class="project-details-split">
+              <div class="details-col">
+                <h4>Pedagogical Decision-Making</h4>
+                <p>
+                  Replaced open-ended subjective exam scorecards with structured objective clinical assessment grids. Each procedure (e.g. sterile catheterization, neonatal resuscitation, Braden staging) was converted into binary and graduated scorecards with clear behavioral markers.
+                </p>
+              </div>
+              <div class="details-col">
+                <h4>Specific Responsibilities</h4>
+                <ul>
+                  <li>Authored adult nursing instructional modules and evaluation grids.</li>
+                  <li>Facilitated cross-sector workshops with international nursing consultants.</li>
+                  <li>Conducted pilot training sessions at the College of Nursing Mohakhali.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="project-metrics-strip">
+              <div class="metrics-items">
+                <div class="metric-item">
+                  <span class="metric-value">Nationwide</span>
+                  <span class="metric-label">Institutional Adoption</span>
+                </div>
+                <div class="metric-item">
+                  <span class="metric-value">CTP Certified</span>
+                  <span class="metric-label">Accredited Program</span>
+                </div>
+                <div class="metric-item">
+                  <span class="metric-value">DGNM & ProNurse</span>
+                  <span class="metric-label">National Partnership</span>
+                </div>
+              </div>
+
+              <div class="project-links-wrap">
+                <button type="button" class="btn-small-link open-project-modal-btn" data-project="project3">
+                  View Full Case Study ↗
+                </button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project D (Specialized Inpatient Practice & Invasive Care) -->
+        <article class="project-case-card reveal-on-scroll">
+          <div class="project-top-bar">
+            <div style="display: flex; align-items: center; gap: 0.75rem;">
+              <span class="project-id-badge">PROJECT D</span>
+              <span class="project-domain-tag">Specialized Inpatient Surgery & Invasive Procedures</span>
+            </div>
+            <div style="font-family: var(--font-mono); font-size: 0.8rem; font-weight: 700; color: var(--text-muted);">
+              NITOR DHAKA • CHIANG MAI UNIVERSITY THAILAND
+            </div>
+          </div>
+
+          <div class="project-body">
+            <h3 class="project-title">
+              Specialized Orthopedic Trauma & Cardiac Catheterization Care Protocol Integration
+            </h3>
+
+            <div class="project-role-banner">
+              <span>ROLE:</span>
+              <strong>Senior Staff Nurse & Specialized Clinical Specialist (11-Year NITOR Tenure)</strong>
+              <span>| FOCUS:</span>
+              <span>Polytrauma, Pin-Site Asepsis, Spinal Cord Rehab & Post-Cath Monitoring</span>
+            </div>
+
+            <p class="project-overview-text">
+              Over an 11-year clinical tenure at Bangladesh's premier trauma center (NITOR) combined with specialized catheterization lab management training at Chiang Mai University, led complex acute post-operative stabilization, skeletal traction management, and early rehabilitation for polytrauma patients.
+            </p>
+
+            <div class="project-metrics-strip">
+              <div class="metrics-items">
+                <div class="metric-item">
+                  <span class="metric-value counter" data-target="11" data-suffix=" Years">0</span>
+                  <span class="metric-label">Trauma Center Service</span>
+                </div>
+                <div class="metric-item">
+                  <span class="metric-value">Chiang Mai Univ</span>
+                  <span class="metric-label">Catheterization Lab Cert</span>
+                </div>
+                <div class="metric-item">
+                  <span class="metric-value">Zero Hematoma</span>
+                  <span class="metric-label">Post-Arterial Protocol Target</span>
+                </div>
+              </div>
+
+              <div class="project-links-wrap">
+                <button type="button" class="btn-small-link open-project-modal-btn" data-project="project4">
+                  View Full Case Study ↗
+                </button>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Resume & Career Journey Section
+         ========================================================================== -->
+    <section class="section" id="resume">
+      <div class="container">
+        <div class="section-badge-wrapper reveal-on-scroll">
+          <span class="section-badge">Curriculum Vitae</span>
+          <div class="section-subtitle">Chronological Experience • Academic Degrees • Certifications</div>
+          <div class="section-divider"></div>
+        </div>
+
+        <!-- Navigation Tabs -->
+        <div class="resume-tabs-nav reveal-on-scroll reveal-delay-1">
+          <button type="button" class="tab-btn active" data-tab="experience">Professional Experience</button>
+          <button type="button" class="tab-btn" data-tab="education">Academic Qualifications</button>
+          <button type="button" class="tab-btn" data-tab="training">Special Trainings (17)</button>
+          <button type="button" class="tab-btn" data-tab="research">Publications & Supervision</button>
+          <button type="button" class="tab-btn" data-tab="resource">Resource Person Roles</button>
+        </div>
+
+        <!-- TAB 1: Professional Experience -->
+        <div class="resume-tab-pane active" id="tab-experience">
+          <div class="timeline">
+            <!-- Item 1: College of Nursing Mohakhali -->
+            <div class="timeline-item active">
+              <div class="timeline-date">March 27, 2015 – Present (9+ Years)</div>
+              <h3 class="timeline-title">Nursing Instructor</h3>
+              <div class="timeline-org">College of Nursing, Mohakhali, Dhaka • Midwifery & Nursing Education and Service</div>
+              <p class="timeline-desc">
+                Leading didactic lectures, clinical demonstrations, and postgraduate research supervision for nursing scholars. Gazetted 2nd Class Officer (appointed May 12, 2011).
+              </p>
+              <ul class="timeline-bullets">
+                <li>Delivering advanced clinical education in adult nursing, pathophysiology, and research methodology.</li>
+                <li>Conducting institutional quality assurance and clinical skills examinations (OSCE).</li>
+                <li>Serving as master trainer for the orientation of newly appointed government registered nurses (2018, 2021, 2022).</li>
+              </ul>
+            </div>
+
+            <!-- Item 2: Hajj Medical Mission -->
+            <div class="timeline-item">
+              <div class="timeline-date">2018 (40 Days Deployment)</div>
+              <h3 class="timeline-title">Senior Staff Nurse – Hajj Medical Team</h3>
+              <div class="timeline-org">Kingdom of Saudi Arabia (Makkah & Madinah) • Ministry of Health & Family Welfare</div>
+              <p class="timeline-desc">
+                Provided acute clinical care, heatstroke resuscitation, and geriatric medical support for international pilgrims under high-volume emergency conditions.
+              </p>
+            </div>
+
+            <!-- Item 3: NITOR -->
+            <div class="timeline-item">
+              <div class="timeline-date">Dec 1, 2004 – March 25, 2015 (10 Years, 4 Months)</div>
+              <h3 class="timeline-title">Senior Staff Nurse</h3>
+              <div class="timeline-org">National Institute of Traumatology and Orthopedic Rehabilitation (NITOR), Dhaka</div>
+              <p class="timeline-desc">
+                Specialized in polytrauma care, pre/post-operative orthopedic surgery management, complex skeletal traction, spinal cord rehabilitation, and surgical wound asepsis.
+              </p>
+            </div>
+
+            <!-- Item 4: WHO Pakistan Mission -->
+            <div class="timeline-item">
+              <div class="timeline-date">2011 (40 Days Deployment)</div>
+              <h3 class="timeline-title">Senior Staff Nurse – WHO Disaster Management Team</h3>
+              <div class="timeline-org">World Health Organization (WHO) • Hyderabad, Sindh Province, Pakistan</div>
+              <p class="timeline-desc">
+                Frontline international emergency deployment during catastrophic mega-flooding. Established diarrheal triage units, managed acute cholera cases, and contained epidemic outbreaks.
+              </p>
+            </div>
+
+            <!-- Item 5: Upazila Health Complex Mehandiganj -->
+            <div class="timeline-item">
+              <div class="timeline-date">June 21, 1998 – Nov 2004 (6 Years, 5 Months)</div>
+              <h3 class="timeline-title">Senior Staff Nurse</h3>
+              <div class="timeline-org">Upazila Health Complex, Mehandiganj, Barisal • Government of Bangladesh</div>
+              <p class="timeline-desc">
+                Date of first joining in Government job (21 June 1998). Delivered primary healthcare, conducted normal and forceps deliveries, provided maternal-child nutritional counseling, and managed rural health programs.
+              </p>
+            </div>
+
+            <!-- Item 6: Sikder Women's Medical College -->
+            <div class="timeline-item">
+              <div class="timeline-date">June 20, 1996 – June 20, 1998 (2 Years)</div>
+              <h3 class="timeline-title">In-Charge, Labour Ward</h3>
+              <div class="timeline-org">Sikder Women's Medical College Hospital, Dhaka</div>
+              <p class="timeline-desc">
+                Supervised round-the-clock labour room operations, managed high-risk obstetric cases and obstructed labour emergencies, and trained junior staff nurses and midwives.
+              </p>
+            </div>
+
+            <!-- Item 7: ICDDR,B -->
+            <div class="timeline-item">
+              <div class="timeline-date">June 20, 1995 – June 20, 1996 (1 Year)</div>
+              <h3 class="timeline-title">Senior Staff Nurse</h3>
+              <div class="timeline-org">International Centre for Diarrhoeal Disease Research, Bangladesh (ICDDR,B), Dhaka</div>
+              <p class="timeline-desc">
+                Applied international infectious disease protocols, managed severe diarrheal dehydrations and dysentery, and conducted clinical counseling on infant nutrition and weaning.
+              </p>
+            </div>
+
+            <!-- Item 8: Saudi Arabia Al-Faisal Clinic -->
+            <div class="timeline-item">
+              <div class="timeline-date">Feb 12, 1992 – Dec 22, 1994 (nearly 3 Years)</div>
+              <h3 class="timeline-title">Senior Staff Nurse</h3>
+              <div class="timeline-org">Al-Faisal National Clinic, Riyadh, Kingdom of Saudi Arabia (KSA)</div>
+              <p class="timeline-desc">
+                Provided inpatient and emergency healthcare across Medicine, Surgery, ENT, Ophthalmology, Pediatrics, and Gynecology in a multinational clinical team. Acquired spoken Arabic fluency.
+              </p>
+            </div>
+
+            <!-- Item 9: Gulshan Mother and Child Clinic -->
+            <div class="timeline-item">
+              <div class="timeline-date">Oct 07, 1991 – Jan 30, 1992</div>
+              <h3 class="timeline-title">Senior Staff Nurse</h3>
+              <div class="timeline-org">Gulshan Mother and Child Clinic, Dhaka</div>
+              <p class="timeline-desc">
+                Initiated professional clinical nursing practice; conducted normal deliveries, managed neonatal care, and provided pediatric nursing support.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- TAB 2: Academic Qualifications -->
+        <div class="resume-tab-pane" id="tab-education">
+          <div class="education-cards-grid">
+            <!-- Degree 1: M.Sc. Mahidol -->
+            <div class="edu-card">
+              <div class="edu-year">Passing Year: 2014</div>
+              <h3 class="edu-degree">M.Sc. in Adult Nursing</h3>
+              <div class="edu-institution">Mahidol University, Bangkok, Thailand</div>
+              <div class="edu-highlights">
+                <strong>Curricular Specializations:</strong>
+                <p>Advanced Health Assessment in Adults • Pathophysiology and Pharmacology in Adult Nursing • Nursing Conceptual Models & Theories • Health Policy, Healthcare Economy & Leadership Competencies • Statistics and Nursing Research • Critical Illness Nursing (Levels I, II, III) • Evidence-Based Nursing Protocols • Scientific Paper Writing & Presentation.</p>
+              </div>
+            </div>
+
+            <!-- Degree 2: B.Sc. Dhaka University -->
+            <div class="edu-card">
+              <div class="edu-year">Passing Year: 2005</div>
+              <h3 class="edu-degree">B.Sc. Nursing in Public Health</h3>
+              <div class="edu-institution">Dhaka University, Dhaka, Bangladesh</div>
+              <div class="edu-highlights">
+                <strong>Curricular Specializations:</strong>
+                <p>Advanced provision of hospital & community nursing services • Designing and evaluating training and educational programmes for nurses, midwives, and public health workers • Healthcare management, administrative activities, and institutional governance.</p>
+              </div>
+            </div>
+
+            <!-- Degree 3: Diploma in Midwifery -->
+            <div class="edu-card">
+              <div class="edu-year">Passing Year: 1991</div>
+              <h3 class="edu-degree">Diploma in Midwifery</h3>
+              <div class="edu-institution">Barisal Nursing Institute • Bangladesh Nursing and Midwifery Council</div>
+              <div class="edu-highlights">
+                <strong>Key Competencies:</strong>
+                <p>Skills of assessing normal and obstructed labour delivery • Counseling pregnant and lactating mothers • Neonatal resuscitation and specialized nursery care • Multi-disciplinary medical team collaboration.</p>
+              </div>
+            </div>
+
+            <!-- Degree 4: Diploma in Nursing -->
+            <div class="edu-card">
+              <div class="edu-year">Passing Year: 1990</div>
+              <h3 class="edu-degree">Diploma in Nursing</h3>
+              <div class="edu-institution">Barisal Nursing Institute • BNMC Reg No: 10005</div>
+              <div class="edu-highlights">
+                <strong>Key Competencies:</strong>
+                <p>Comprehensive patient care across General Medicine, General Surgery, Ophthalmology, ENT, Pediatrics, Orthopedics, Dermatology, Gynecology & Obstetrics, and Emergency Room.</p>
+              </div>
+            </div>
+
+            <!-- S.S.C. -->
+            <div class="edu-card" style="grid-column: 1 / -1;">
+              <div class="edu-year">Passing Year: 1987</div>
+              <h3 class="edu-degree">Secondary School Certificate (S.S.C.)</h3>
+              <div class="edu-institution">Board of Intermediate and Secondary Education, Jessore</div>
+              <div class="edu-highlights">
+                <p><strong>Result:</strong> First Division • <strong>Group:</strong> Science</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- TAB 3: Special Trainings (17 Courses) -->
+        <div class="resume-tab-pane" id="tab-training">
+          <div class="training-table-wrap">
+            <table class="training-table">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Course Name</th>
+                  <th>Institution / Sponsoring Agency</th>
+                  <th>Duration & Year</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td><strong>Training on Innovation</strong></td>
+                  <td>Directorate General of Nursing and Midwifery (DGNM), Mohakhali</td>
+                  <td>2 Days, 2023</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td><strong>Training on Monitors for Nursing Institute Monitoring & Evaluation (NIME)</strong></td>
+                  <td>Nursing Institute Mitford, Dhaka</td>
+                  <td>2 Days, 2022</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td><strong>Training on Teaching Methodology</strong></td>
+                  <td>National Institute of Preventive & Social Medicine (NIPSOM), Dhaka</td>
+                  <td>May 2022</td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td><strong>Training on Midwifery Faculty Development</strong></td>
+                  <td>The National Institute of Advanced Nursing Education and Research (NIANER)</td>
+                  <td>Dec 2020</td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td><strong>Training on Research Methodology</strong></td>
+                  <td>Bangladesh Medical Research Council (BMRC), Mohakhali</td>
+                  <td>20 Days, 2018</td>
+                </tr>
+                <tr>
+                  <td>6</td>
+                  <td><strong>Training on Autism Spectrum Disorder</strong></td>
+                  <td>NIPSOM, Mohakhali, Dhaka</td>
+                  <td>7 Days, 2017</td>
+                </tr>
+                <tr>
+                  <td>7</td>
+                  <td><strong>Training on Computer & Healthcare IT</strong></td>
+                  <td>Directorate General of Health Services (DGHS)</td>
+                  <td>15 Days, Jan 2013</td>
+                </tr>
+                <tr>
+                  <td>8</td>
+                  <td><strong>Training on Catheterization Lab Management</strong></td>
+                  <td>Chiang Mai University, Thailand</td>
+                  <td>2 Months, 2012</td>
+                </tr>
+                <tr>
+                  <td>9</td>
+                  <td><strong>Training of Trainers (TOT) for 6 Months Post-Basic Midwifery Education</strong></td>
+                  <td>BNC, DGHS, DNS, UNFPA, WHO</td>
+                  <td>1 Month, July 2011</td>
+                </tr>
+                <tr>
+                  <td>10</td>
+                  <td><strong>Training on Special English Language</strong></td>
+                  <td>National Academy for Planning and Development (NAPD), Dhaka</td>
+                  <td>1 Month, Jan 2011</td>
+                </tr>
+                <tr>
+                  <td>11</td>
+                  <td><strong>Training on Chronic Kidney Disease (CKD) Management</strong></td>
+                  <td>National Institute of Kidney Diseases and Urology (NIKDU), Dhaka</td>
+                  <td>7 Days, July 2008</td>
+                </tr>
+                <tr>
+                  <td>12</td>
+                  <td><strong>Nursing Management on Spinal Cord Injury and its Prevention</strong></td>
+                  <td>Bangladesh Health Professions Institute (BHPI), CRP, Savar, Dhaka</td>
+                  <td>3 Days, March 2007</td>
+                </tr>
+                <tr>
+                  <td>13</td>
+                  <td><strong>Training on Recording and Reporting (MIS)</strong></td>
+                  <td>DGHS, MIS Department, Mohakhali, Dhaka</td>
+                  <td>2 Days, Feb 2007</td>
+                </tr>
+                <tr>
+                  <td>14</td>
+                  <td><strong>Training on Reproductive Health</strong></td>
+                  <td>Institute of Child and Mother Health (ICMH), Matuail, Dhaka</td>
+                  <td>2 Weeks, March 2004</td>
+                </tr>
+                <tr>
+                  <td>15</td>
+                  <td><strong>English Language Training Course</strong></td>
+                  <td>Bureau of Manpower, Employment and Training (BMET), Dhaka</td>
+                  <td>15 Days, May 2002</td>
+                </tr>
+                <tr>
+                  <td>16</td>
+                  <td><strong>Clinical Contraception and RTI/STI Case Management</strong></td>
+                  <td>Ministry of Health and Family Welfare (MoHFW), Dhaka</td>
+                  <td>10 Days, Jan 2002</td>
+                </tr>
+                <tr>
+                  <td>17</td>
+                  <td><strong>Management of Breastfeeding</strong></td>
+                  <td>Breastfeeding Foundation, Dhaka</td>
+                  <td>5 Days, May 2000</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- TAB 4: Research Publications & Guided Theses -->
+        <div class="resume-tab-pane" id="tab-research">
+          <div class="pub-cards-list">
+            <h3 style="font-size: 1.15rem; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-primary); margin-bottom: 0.5rem;">
+              Peer-Reviewed Publications & Scholarly Papers
+            </h3>
+
+            <!-- Pub 1 -->
+            <div class="pub-card">
+              <div>
+                <div class="pub-meta">JOURNAL ARTICLE • 2021 • PEER-REVIEWED</div>
+                <h4 class="pub-title">Pressure Ulcer Prevention for Hospitalized Adult Patients: Evidence-Based Nursing</h4>
+                <div class="pub-outlet">Published by Accademia, 2021</div>
+                <a href="https://doi.org/10.20935/Al.2885" target="_blank" rel="noopener noreferrer" class="pub-doi-link">
+                  DOI: 10.20935/Al.2885 ↗
+                </a>
+              </div>
+              <span class="skill-level-badge">Indexed</span>
+            </div>
+
+            <!-- Pub 2 -->
+            <div class="pub-card">
+              <div>
+                <div class="pub-meta">JOURNAL ARTICLE • 2021 • PEER-REVIEWED</div>
+                <h4 class="pub-title">Pressure Ulcer Impact and Core Concept</h4>
+                <div class="pub-outlet">Published by Accademia, 2021</div>
+                <a href="https://doi.org/10.20935/Al.3608" target="_blank" rel="noopener noreferrer" class="pub-doi-link">
+                  DOI: 10.20935/Al.3608 ↗
+                </a>
+              </div>
+              <span class="skill-level-badge">Indexed</span>
+            </div>
+
+            <!-- Pub 3 -->
+            <div class="pub-card">
+              <div>
+                <div class="pub-meta">CLINICAL GUIDELINE RECOMMENDATION • 2022</div>
+                <h4 class="pub-title">Guidelines Recommendation for Pressure Ulcer Prevention: Evidence-Based Nursing</h4>
+                <div class="pub-outlet">South Asian Nursing Journal, 2022</div>
+              </div>
+              <span class="skill-level-badge">Guideline</span>
+            </div>
+
+            <!-- Pub 4 -->
+            <div class="pub-card">
+              <div>
+                <div class="pub-meta">MASTER'S THESIS DISSERTATION • 2014</div>
+                <h4 class="pub-title">Pressure Ulcer Prevention for Hospitalized Adult Patients: Evidence-Based Nursing</h4>
+                <div class="pub-outlet">Mahidol University, Bangkok, Thailand, 2014</div>
+              </div>
+              <span class="skill-level-badge">M.Sc. Thesis</span>
+            </div>
+
+            <!-- Pub 5 -->
+            <div class="pub-card">
+              <div>
+                <div class="pub-meta">RESEARCH MONOGRAPH • 2004</div>
+                <h4 class="pub-title">Patients’ Satisfaction Regarding Nursing Care at Dhaka Medical College and Hospital</h4>
+                <div class="pub-outlet">Dhaka University B.Sc. Nursing Degree Research Project, 2004</div>
+              </div>
+              <span class="skill-level-badge">B.Sc. Monograph</span>
+            </div>
+
+            <!-- Guided Theses Header -->
+            <h3 style="font-size: 1.15rem; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-primary); margin: 2rem 0 0.5rem;">
+              Supervised Postgraduate Theses (Working as Research Guide)
+            </h3>
+
+            <div class="pub-card">
+              <div>
+                <div class="pub-meta">RESEARCH SUPERVISOR / GUIDE</div>
+                <h4 class="pub-title">Assessment of the Level of Knowledge Regarding Pleural Effusion of Senior Staff Nurses</h4>
+                <div class="pub-outlet">National Institute of Diseases of the Chest and Hospital (NIDCH), Mohakhali, Dhaka</div>
+              </div>
+            </div>
+
+            <div class="pub-card">
+              <div>
+                <div class="pub-meta">RESEARCH SUPERVISOR / GUIDE</div>
+                <h4 class="pub-title">Assessment of Nurses’ Knowledge Regarding Hepatitis B Virus Infection</h4>
+                <div class="pub-outlet">Dhaka Medical College and Hospital, Dhaka, Bangladesh</div>
+              </div>
+            </div>
+
+            <div class="pub-card">
+              <div>
+                <div class="pub-meta">RESEARCH SUPERVISOR / GUIDE</div>
+                <h4 class="pub-title">Assessment of Nurses’ Knowledge Regarding Pressure Ulcer Prevention</h4>
+                <div class="pub-outlet">National Institute of Traumatology and Orthopedic Rehabilitation (NITOR), Dhaka</div>
+              </div>
+            </div>
+
+            <div class="pub-card">
+              <div>
+                <div class="pub-meta">RESEARCH SUPERVISOR / GUIDE</div>
+                <h4 class="pub-title">Assessment of Nurses’ Knowledge Regarding Anemia Among Pregnant Women</h4>
+                <div class="pub-outlet">Dhaka Medical College and Hospital, Dhaka, Bangladesh</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- TAB 5: Resource Person Roles & International Conferences -->
+        <div class="resume-tab-pane" id="tab-resource">
+          <div style="max-width: 960px; margin: 0 auto;">
+            <h3 style="font-size: 1.15rem; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-primary); margin-bottom: 1.5rem;">
+              Invited Faculty & Resource Person Engagements
+            </h3>
+
+            <div class="training-table-wrap" style="margin-bottom: 3rem;">
+              <table class="training-table">
+                <thead>
+                  <tr>
+                    <th>Program / Course</th>
+                    <th>Institution & Venue</th>
+                    <th>Duration & Year</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>Orientation on Nursing Institute Monitoring & Evaluation Tools (NIEM)</strong></td>
+                    <td>Kishoreganj Nursing Institute</td>
+                    <td>1 Day, 2023</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Specialized Training on Intensive Care Unit (ICU) Nursing</strong></td>
+                    <td>Continuing Nursing Education & Training Center, Barisal</td>
+                    <td>2 Months, 2022</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Orientation Training for Newly Appointed Registered Nurses</strong></td>
+                    <td>College of Nursing, Mohakhali, Dhaka</td>
+                    <td>15 Days each (2018, 2021, 2022)</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Specialized Program on Cardiac Nursing</strong></td>
+                    <td>College of Nursing, Mohakhali, Dhaka</td>
+                    <td>1 Month, 2017</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Specialized Training on Geriatric & Elderly Nursing</strong></td>
+                    <td>Fauzdarhat Nursing College, Chittagong</td>
+                    <td>1 Month, 2015</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <h3 style="font-size: 1.15rem; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-primary); margin-bottom: 1.5rem;">
+              Workshops & Technical Working Groups (TWG)
+            </h3>
+
+            <div class="pub-cards-list" style="margin-bottom: 3rem;">
+              <div class="pub-card">
+                <div>
+                  <div class="pub-meta">NATIONAL TECHNICAL WORKING GROUP (TWG) • 2023</div>
+                  <h4 class="pub-title">Nurse Teachers’ Training Detailed Syllabus & Evaluation Grids for Certificate Training Programs (CTP)</h4>
+                  <div class="pub-outlet">Organized by Directorate General of Nursing and Midwifery (DGNM) & ProNurse Project</div>
+                </div>
+              </div>
+              <div class="pub-card">
+                <div>
+                  <div class="pub-meta">POLICY WORKSHOP • 2022</div>
+                  <h4 class="pub-title">Workshop on Smart Bangladesh: Digital Transformation in Healthcare</h4>
+                  <div class="pub-outlet">Organized by DGNM, Mohakhali, Dhaka</div>
+                </div>
+              </div>
+              <div class="pub-card">
+                <div>
+                  <div class="pub-meta">CLINICAL SYMPOSIUM • 2022</div>
+                  <h4 class="pub-title">Workshop on Gender-Based Violence: Clinical Identification & Support</h4>
+                  <div class="pub-outlet">Organized by ProNurse Project, College of Nursing Mohakhali</div>
+                </div>
+              </div>
+            </div>
+
+            <h3 style="font-size: 1.15rem; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-primary); margin-bottom: 1.5rem;">
+              International Conferences Attended
+            </h3>
+
+            <div class="pub-cards-list">
+              <div class="pub-card">
+                <div>
+                  <div class="pub-meta">BANGKOK, THAILAND • 2014</div>
+                  <h4 class="pub-title">1st Asian Congress in Nursing Education: "Transformative Nursing Education for Global Health"</h4>
+                </div>
+              </div>
+              <div class="pub-card">
+                <div>
+                  <div class="pub-meta">NIANER • MAY 2018</div>
+                  <h4 class="pub-title">International Nursing Conference: "Higher Nursing Education: Trends and Challenges"</h4>
+                </div>
+              </div>
+              <div class="pub-card">
+                <div>
+                  <div class="pub-meta">GLOBAL SYMPOSIUM • JULY 2021</div>
+                  <h4 class="pub-title">Caregiver’s Burden and Support During the COVID-19 Pandemic</h4>
+                </div>
+              </div>
+              <div class="pub-card">
+                <div>
+                  <div class="pub-meta">NATIONAL SCIENTIFIC CONGRESS • 2023</div>
+                  <h4 class="pub-title">Scientific Conference on Nursing and Midwifery Education & Service</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="resume-action-row reveal-on-scroll">
+          <button type="button" class="btn-primary" onclick="window.print()">
+            Print / Save Full CV (PDF)
+          </button>
+          <a href="#contact" class="btn-secondary">
+            Request Certified Credentials
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Video About Myself Section (Interactive Audio Visualizer Waveform)
+         ========================================================================== -->
+    <section class="section section-alt" id="video">
+      <div class="container">
+        <div class="section-badge-wrapper reveal-on-scroll">
+          <span class="section-badge">Video Introduction</span>
+          <div class="section-subtitle">Personal Presentation • Academic Vision • Spoken Transcript</div>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="video-section-wrapper reveal-on-scroll reveal-delay-1">
+          <div class="video-player-container">
+            <div class="video-preview-canvas" id="video-screen">
+              <button type="button" class="video-play-btn" id="video-play-trigger" aria-label="Play/Pause Video Presentation">
+                ▶
+              </button>
+              <h3 class="video-caption-title">Papiya Yeasmin Minu</h3>
+              <p class="video-caption-sub">
+                Professional Journey, Clinical Philosophy & Educational Vision in Nursing and Midwifery
+              </p>
+
+              <!-- Dynamic Audio Spectrum Visualizer Bars -->
+              <div class="audio-visualizer-bars" id="visualizer-bars"></div>
+            </div>
+
+            <div class="video-controls-bottom">
+              <div>
+                <span style="color: #10b981;">●</span> HD VIDEO PRESENTATION • 1080P
+              </div>
+              <div id="video-timestamp">00:00 / 03:45</div>
+            </div>
+          </div>
+
+          <!-- Video Transcript Box -->
+          <div class="video-transcript-box">
+            <div class="transcript-header">
+              <span class="transcript-title">Video Presentation Transcript</span>
+              <button type="button" id="toggle-transcript-btn" style="font-size: 0.78rem; font-weight: 700; color: var(--text-primary); text-decoration: underline; cursor: pointer;">
+                Hide Transcript ▲
+              </button>
+            </div>
+
+            <div class="transcript-body" id="transcript-content">
+              <p style="margin-bottom: 0.8rem;">
+                <em>"Assalamu Alaikum and warm greetings. My name is Papiya Yeasmin Minu. I currently serve as an Instructor at the College of Nursing, Mohakhali, Dhaka, under the Directorate General of Nursing and Midwifery, Bangladesh."</em>
+              </p>
+              <p style="margin-bottom: 0.8rem;">
+                <em>"Over my 32-year clinical and teaching trajectory—from my initial postings in maternal-child clinics and international service in Saudi Arabia and WHO's disaster relief mission in Pakistan, through a decade at Bangladesh's premier trauma institute NITOR—I have observed firsthand how rigorous, evidence-based nursing directly transforms patient outcomes."</em>
+              </p>
+              <p style="margin-bottom: 0.8rem;">
+                <em>"During my Master of Science in Adult Nursing at Mahidol University, Bangkok, I focused my research on hospital-acquired pressure ulcer prevention. Today, my mission is twofold: instilling modern pedagogical rigor and research literacy into our nursing classrooms, and equipping our future healthcare professionals with the clinical competence, ethical empathy, and leadership required for tomorrow's healthcare challenges."</em>
+              </p>
+              <p>
+                <em>"Thank you for visiting my e-portfolio. I welcome collaborations in nursing research, curriculum development, and healthcare capacity building."</em>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Contact Information Section
+         ========================================================================== -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-badge-wrapper reveal-on-scroll">
+          <span class="section-badge">Contact Me</span>
+          <div class="section-subtitle">Inquiries • Academic Collaborations • Official Correspondence</div>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Left: Contact Details -->
+          <div class="contact-info-col reveal-on-scroll reveal-delay-1">
+            <h3>Get In Touch</h3>
+            <p class="contact-info-text">
+              I welcome inquiries regarding academic lectures, research collaborations, nursing curriculum development, clinical consultations, and master training programs.
+            </p>
+
+            <div class="contact-items-list">
+              <!-- Email -->
+              <div class="contact-item-card">
+                <div class="contact-icon-box">✉</div>
+                <div style="flex-grow: 1;">
+                  <div class="contact-meta-label">Email Address</div>
+                  <a href="mailto:papiaminu@gmail.com" class="contact-meta-val">papiaminu@gmail.com</a>
+                </div>
+                <button type="button" class="btn-small-link copy-btn" data-copy="papiaminu@gmail.com" title="Copy Email">
+                  Copy
+                </button>
+              </div>
+
+              <!-- Phone -->
+              <div class="contact-item-card">
+                <div class="contact-icon-box">☎</div>
+                <div style="flex-grow: 1;">
+                  <div class="contact-meta-label">Direct Mobile</div>
+                  <a href="tel:01715416917" class="contact-meta-val">+880 1715-416917</a>
+                </div>
+                <button type="button" class="btn-small-link copy-btn" data-copy="01715416917" title="Copy Phone">
+                  Copy
+                </button>
+              </div>
+
+              <!-- Present Address -->
+              <div class="contact-item-card">
+                <div class="contact-icon-box">📍</div>
+                <div>
+                  <div class="contact-meta-label">Present Institutional Address</div>
+                  <div class="contact-meta-val">Instructor, College of Nursing, Mohakhali, Dhaka-1212, Bangladesh</div>
+                </div>
+              </div>
+
+              <!-- Permanent Address -->
+              <div class="contact-item-card">
+                <div class="contact-icon-box">🏡</div>
+                <div>
+                  <div class="contact-meta-label">Permanent Address</div>
+                  <div class="contact-meta-val">D/O Sharaj Munshi, Village & P.S: Karnakati, District: Barisal, Bangladesh</div>
+                </div>
+              </div>
+
+              <!-- Official Service Info -->
+              <div class="contact-item-card">
+                <div class="contact-icon-box">🏛</div>
+                <div>
+                  <div class="contact-meta-label">Government Service Status</div>
+                  <div class="contact-meta-val">2nd Class Gazetted Officer (Joined May 12, 2011) • Govt Service Since June 21, 1998</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Tomasz Gajda Minimalist Form -->
+          <div class="contact-form-col reveal-on-scroll reveal-delay-2">
+            <form class="contact-form" id="contact-form">
+              <h3 style="font-size: 1.25rem; font-weight: 800; text-transform: uppercase; margin-bottom: 1.5rem; letter-spacing: 0.05em; color: var(--text-primary);">
+                Send a Direct Message
+              </h3>
+
+              <div class="form-group">
+                <label for="form-name" class="form-label">Full Name *</label>
+                <input type="text" id="form-name" class="form-control" placeholder="Enter your full name" required>
+              </div>
+
+              <div class="form-group">
+                <label for="form-email" class="form-label">Email Address *</label>
+                <input type="email" id="form-email" class="form-control" placeholder="Enter your official email" required>
+              </div>
+
+              <div class="form-group">
+                <label for="form-subject" class="form-label">Subject / Purpose *</label>
+                <input type="text" id="form-subject" class="form-control" placeholder="e.g. Academic Collaboration / Training Invitation" required>
+              </div>
+
+              <div class="form-group">
+                <label for="form-message" class="form-label">Message Details *</label>
+                <textarea id="form-message" class="form-control" placeholder="Type your detailed message here..." required></textarea>
+              </div>
+
+              <button type="submit" class="form-submit-btn">
+                Send Message
+              </button>
+
+              <div class="form-status-msg" id="form-status"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       Footer (Tomasz Gajda Dark Minimalist Style)
+       ========================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <h4>Papiya Yeasmin Minu</h4>
+          <p>Instructor, College of Nursing, Mohakhali, Dhaka • Midwifery & Nursing Education</p>
+        </div>
+
+        <div class="footer-nav">
+          <a href="#hero">Home</a>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#resume">Resume</a>
+          <a href="#video">Video</a>
+          <a href="#contact">Contact</a>
+        </div>
+
+        <a href="#hero" class="back-to-top-btn" aria-label="Scroll to top of page">
+          Back to Top ↑
+        </a>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          © 2026 Papiya Yeasmin Minu. All rights reserved. Built following Tomasz Gajda's clean minimalist portfolio layout.
+        </div>
+        <div>
+          M.Sc. in Adult Nursing (Mahidol University) • Dhaka University
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+         Project Case Study Modal
+         ========================================================================== -->
+  <div class="modal-overlay" id="project-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-content-card">
+      <button type="button" class="modal-close-btn" id="modal-close-btn" aria-label="Close modal">✕</button>
+      <div id="modal-details-body">
+        <!-- Injected via JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
